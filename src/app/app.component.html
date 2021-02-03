@@ -1,3 +1,34 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>栅格布局</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-grid fixed>
+      <!--  -->
+      <ion-row style="border: 1px solid blue;">
+        <!-- size:份数，一共12份 -->
+        <ion-col size="6" style="border: 1px solid green;">1</ion-col>
+        <ion-col size="6" style="border: 1px solid red;">1</ion-col>
+      </ion-row>
+<!-- 没有size属性，会均分空间 -->
+      <ion-row style="border: 1px solid blue;">
+        <ion-col style="border: 1px solid green;">1</ion-col>
+        <ion-col style="border: 1px solid red;">1</ion-col>
+        <ion-col style="border: 1px solid red;">1</ion-col>
+      </ion-row>
+      <ion-row style="border: 1px solid blue;">
+        <ion-col size="3" style="border: 1px solid green;">1</ion-col>
+        <ion-col size="3" style="border: 1px solid red;">1</ion-col>
+        <ion-col size="6" style="border: 1px solid red;">1</ion-col>
+      </ion-row>
+      <!-- 超出12分，自动换行显示 -->
+      <ion-row style="border: 1px solid blue;">
+        <ion-col size="6" style="border: 1px solid green;">1</ion-col>
+        <ion-col size="6" style="border: 1px solid red;">1</ion-col>
+        <ion-col size="6" style="border: 1px solid red;">1</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
 </ion-app>

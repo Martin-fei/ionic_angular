@@ -1,0 +1,41 @@
+<ion-app>
+  <!-- <ion-router-outlet></ion-router-outlet> -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>按钮Button</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-button>click me</ion-button>
+    <br>
+    <!-- mode:强制指定风格，默认按钮风格会自动随设备变化 -->
+    <ion-button mode="ios">IOS</ion-button>
+    <ion-button mode="md">Android</ion-button>
+    <br>
+    <!-- 颜色 ionic规定了一些适用于手机端的主题色；具体在src/theme/variables.scss -->
+    <ion-button color="primary">IOS</ion-button>
+    <ion-button color="secondary">IOS</ion-button>
+    <ion-button color="warning">IOS</ion-button>
+    <ion-button color="success">IOS</ion-button>
+    <ion-button color="dark">IOS</ion-button>
+    <ion-button color="medium">IOS</ion-button>
+    <ion-button color="tertiary">IOS</ion-button>
+    <ion-button color="light">IOS</ion-button>
+    <br>
+    <!-- fill：填充方式 -->
+    <ion-button fill="outline">outline</ion-button>
+    <ion-button fill="clear">clear</ion-button>
+    <ion-button fill="solid">solid</ion-button>
+    <br>
+    <!--size:大小  -->
+    <ion-button size="small">small</ion-button>
+    <ion-button size="default">default</ion-button>
+    <ion-button size="large">large</ion-button>
+    <br>
+    <!-- expand：扩展方式 -->
+    <ion-button expand="full">full</ion-button>
+    <ion-button expand="block">block</ion-button>
+    <!-- disable:不可用 -->
+    <ion-button expand="full" disabled>不可用</ion-button>
+  </ion-content>
+</ion-app>
